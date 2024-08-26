@@ -1,0 +1,49 @@
+
+nav li {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    background: linear-gradient(45deg, #7D38B4, #371693, #75B8ED);
+    left: -130%;
+    /* bottom: 0; */
+    /* top: 100%; */
+    top: 0;
+    z-index: -1;
+    transition: none;
+}
+nav li:hover::before {
+    animation: text-color-slide 0.7s forwards;
+}
+
+@keyframes text-color-slide {
+    50% {
+        left: 10%;
+        /* top: -40%; */
+    }
+    
+    100% {
+        left: -15%;
+        /* top: -15%; */
+    }
+}
+.text {
+    background: linear-gradient(45deg, #7D38B4, #371693, #75B8ED);
+    filter: brightness(3);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+a.text:hover{
+    /* color: #fff; */
+    -webkit-text-fill-color: #fff;
+}
+nav li:hover{
+    transition: all 0.2s;
+    font-size: 2vw;
+}
