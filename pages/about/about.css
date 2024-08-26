@@ -1,7 +1,9 @@
+
 #about {
     display: flex;
     column-count: 2;
     gap: 10px;
+    box-sizing: border-box;
 }
 .left-dev {
     display: flex;
@@ -9,7 +11,6 @@
     align-items: center;
     flex-direction: column;
     width: 50%;
-    
 }
 
 .phrase {
@@ -20,7 +21,7 @@
     -webkit-text-fill-color: transparent;
     background-size: 200%;
     animation: color-slide-left 5s linear infinite;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 @keyframes color-slide-left {
@@ -42,12 +43,14 @@
 .college{
     font-size:2vw;
     filter: brightness(4);
+    color: black;
 }
 .good-experias{
     font-size: 1.5vw;
     margin: 30px;
     width: 80%;
     text-align: center;
+    
 }
 .good-experias .phrase{
     font-size: 1.5vw;

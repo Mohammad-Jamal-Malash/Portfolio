@@ -11,3 +11,16 @@ fetch("pages/home/home-card.html")
     }).then(data => {
         document.getElementById("about").innerHTML = data;
     });
+
+    fetch("pages/projects/projects.html")
+    .then(response => {
+        return response.text()
+    }).then(data => {
+        document.getElementById("projects").innerHTML = data;
+    });
+    fetch("pages/contact/contact.html")
+    .then(response => {
+        return response.text()
+    }).then(data => {
+        document.getElementById("contact").innerHTML = data;
+    });

@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background: linear-gradient(45deg, #d1c4e9, #ffc1e3, #75B8ED);
+    box-shadow: 28px 10px 10px rgba(#d1c4e9, #ffc1e3, 0, 0.5);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,9 +23,7 @@ html {
 }
 /*-------------------------------------*/
 .card {
-  height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  background-color: black;
+  min-height: 100vh;
   color: white;
   /* position: sticky;
     top: 0; */
