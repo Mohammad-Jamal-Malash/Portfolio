@@ -1,6 +1,84 @@
-#about{
+#about {
+    display: flex;
+    column-count: 2;
+    gap: 10px;
+}
+.left-dev {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 50%;
     
+}
+
+.phrase {
+    font-size: 2rem;
+    font-family: "Radley";
+    background: linear-gradient(90deg, white 0%, white 90%, #7D38B4 95%, #371693 98%, #75B8ED 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: color-slide-left 5s linear infinite;
+    /* overflow: hidden; */
+}
+
+@keyframes color-slide-left {
+    from {
+        background-position: 200% 0%;
+    }
+    to {
+        background-position: 0% 0%;
+    }
+}
+.degree{
+    font-size: 1.5vw;
+    font-family: radley;
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+
+}
+.college{
+    font-size:2vw;
+    filter: brightness(4);
+}
+.good-experias{
+    font-size: 1.5vw;
+    margin: 30px;
+    width: 80%;
+    text-align: center;
+}
+.good-experias .phrase{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.right-dev {
+    grid-template-columns: auto auto;
+    width: 50%;
+    overflow: hidden;
+}
+.skills-text{
+    font-size: 2.5vw;
+    margin-top: 25%;
+    width: 20%;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 15px; /* Space between columns */
+    margin: 0px 15px;
+    margin-top: 3%;
+}
+
+
+.skills-list li {
+    font-size: 1.2vw;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(45deg, #7D38B4, #371693);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: text;
+    list-style-type: none;
 }
