@@ -52,5 +52,5 @@ a.text:hover{
 }
 nav li:hover{
     transition: all 0.2s;
-    font-size: 2vw;
+    font-size: 2rem;
 }
