@@ -33,7 +33,7 @@
     }
 }
 .degree{
-    font-size: 1.5vw;
+    font-size: 2rem;
     font-family: radley;
     margin: 30px;
     width: 300px;
@@ -41,34 +41,35 @@
 
 }
 .college{
-    font-size:2vw;
+    font-size:2.1rem;
     filter: brightness(4);
     color: black;
 }
 .good-experias{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin: 30px;
     width: 80%;
     text-align: center;
     
 }
 .good-experias .phrase{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
 }
 .right-dev {
-    grid-template-columns: auto auto;
     width: 50%;
     overflow: hidden;
 }
 .skills-text{
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     margin-top: 25%;
     width: 20%;
 }
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 15px; /* Space between columns */
     margin: 0px 15px;
     margin-top: 3%;
@@ -76,7 +77,7 @@
 
 
 .skills-list li {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(45deg, #7D38B4, #371693);
     padding: 10px;
@@ -84,4 +85,18 @@
     border-radius: 10px;
     cursor: text;
     list-style-type: none;
+    min-width: 30%;
+}
+
+@media (max-width:700px){
+    #about {
+        column-count: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    #about div{
+        width: 95%;
+    }
 }

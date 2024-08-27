@@ -1,9 +1,9 @@
-/* nav{
-    backdrop-filter: blur(10px);
+nav{
+    /* backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 5px 8px 32px rgba(118, 22, 109, 0.37);
-} */
+}
  
 
 nav li {
@@ -41,7 +41,8 @@ nav li:hover::before {
     }
 }
 .text {
-    background: linear-gradient(45deg, #7D38B4, #371693, #75B8ED);
+    /* background: linear-gradient(45deg, #7D38B4, #371693, #75B8ED); */
+    background-color: white;
     filter: brightness(3);
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -5,9 +5,11 @@
 body{
   background: linear-gradient(45deg, #d1c4e9, #ffc1e3, #75B8ED);
     box-shadow: 28px 10px 10px rgba(#d1c4e9, #ffc1e3, 0, 0.5);
+    overflow: auto;
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 @font-face {
   font-family: "jsMath";
@@ -21,12 +23,38 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
+.card >* {
+  animation: an ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+
+
+@keyframes an {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(00);
+  }
+}
+
+
 /*-------------------------------------*/
 .card {
   min-height: 100vh;
   color: white;
   /* position: sticky;
     top: 0; */
+}
+#card-container .card:not(:first-child) > *:first-child{
+  margin-top: 50px;
 }
 nav {
   width: 50%;
@@ -50,3 +78,71 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.footer{
+  width: 100%;
+  min-height: 50vh;
+  background-color: black;
+  margin-top: 20vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.footer  * {
+  color: white;
+}
+.footer h2{
+  font-size: 2rem;
+  font-family: "Radley";
+}
+.footer p{
+  font-size: 1rem;
+  font-family:cursive, sans-serif, monospace;
+  
+}
+.footer-up-from-line{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.social .wrapper {
+  flex-direction: row;
+  position: static;
+  margin-top: 10px;
+}
+
+.line{
+  color: white;
+  width: 90%;
+}
+.copyright-text{
+  position: absolute;
+  bottom: 5px;
+
+}
+@media (max-width: 1200px) {
+  html {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+      font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+      font-size: 9px;
+  }
+}
+
