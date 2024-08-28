@@ -47,8 +47,8 @@ html {
 .card {
   min-height: 100vh;
   color: white;
-  position: sticky;
-    top: 0;
+/*  position: sticky;
+    top: 0;*/
 }
 #card-container .card:not(:first-child) > *:first-child{
   margin-top: 50px;
