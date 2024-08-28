@@ -12,10 +12,6 @@
 
 .bluerd-container {
   height: 100vh;
-  /* background-color: linera-gradient(
-    rgba(255, 252, 252, 0.1),
-    rgba(255, 252, 252, 0.0)
-  ); */
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -31,15 +27,13 @@
 }
 h1 {
   font-family: "jsMath";
-  font-size: 3.5vw;
+  font-size: 3.5rem;
   text-align: center;
 }
 .info {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-align: center;
   opacity: 0.8;
   margin-top: -50px;
   font-family: "Radley";
-  font-style: italic;
-  font-weight: 100;
 }
