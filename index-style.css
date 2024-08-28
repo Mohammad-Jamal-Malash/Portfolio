@@ -29,9 +29,6 @@ html {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-
-
-
 @keyframes an {
   0% {
     opacity: 0;
@@ -57,15 +54,16 @@ html {
   margin-top: 50px;
 }
 nav {
-  width: 50%;
+  width: 100%;
   position: fixed;
   right: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
+
 }
 
 li {
@@ -73,6 +71,7 @@ li {
   font-size: 1.5rem;
   font-family: "jsMath";
   cursor: pointer;
+  margin: 0 15px;
 }
 a {
   text-decoration: none;
@@ -102,7 +101,7 @@ a {
 .footer p{
   font-size: 1rem;
   font-family:cursive, sans-serif, monospace;
-  
+  margin-top: 10px;
 }
 .footer-up-from-line{
   width: 100%;
@@ -116,7 +115,6 @@ a {
 .social .wrapper {
   flex-direction: row;
   position: static;
-  margin-top: 10px;
 }
 
 .line{
@@ -128,6 +126,9 @@ a {
   bottom: 5px;
 
 }
+
+
+
 @media (max-width: 1200px) {
   html {
       font-size: 15px;

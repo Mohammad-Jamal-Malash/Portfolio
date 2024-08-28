@@ -1,15 +1,15 @@
 nav{
-    /* backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18); */
+  /*border: 1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 5px 8px 32px rgba(118, 22, 109, 0.37);
+  background-color: rgba(0, 0, 0, 0.5);
 }
  
 
 nav li {
     position: relative;
     overflow: hidden;
-    
 }
 
 nav li::before {
