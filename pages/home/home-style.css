@@ -14,6 +14,7 @@
   height: 100vh;
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   color: white;
@@ -26,14 +27,14 @@
   flex-direction: column;
 }
 h1 {
-  font-family: "jsMath";
+  font-family: "Radley";
   font-size: 3.5rem;
   text-align: center;
+  position: relative;
 }
 .info {
   font-size: 1.5rem;
   text-align: center;
   opacity: 0.8;
-  margin-top: -50px;
   font-family: "Radley";
 }
