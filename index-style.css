@@ -45,7 +45,7 @@ html {
 
 /*-------------------------------------*/
 .card {
-  min-height: 100vh;
+  min-height: 100dvh;
   color: white;
 /*  position: sticky;
     top: 0;*/
